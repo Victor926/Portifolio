@@ -33,6 +33,10 @@ ul {
   list-style: none;
 }
 
+li {
+  font-size: 18px;
+}
+
 #nav_container li:hover {
   color: var(--cor_4);
   text-decoration: underline;
@@ -45,7 +49,7 @@ ul {
 header {
   max-width: 1120px;
   margin: auto;
-  padding: 1.5rem 10rem;
+  padding: 1.5rem 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -64,7 +68,7 @@ header {
 #link_container {
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  gap: 15px;
   color: var(--cor_5);
   font-size: 18px;
   font-weight: bold;
@@ -100,10 +104,9 @@ h1 a:hover {
 #home{
   max-width: 1120px;
   margin: auto;
-  padding: 7rem 10rem;
+  padding: 100px 150px;
   background-color: var(--cor_3);
   color: var(--cor_1);
-
 }
 
 #conteudo_home {
@@ -112,6 +115,7 @@ h1 a:hover {
   justify-content: space-between;
   align-items: center;
   position: center;
+  gap: 70px;
 }
 
 #saudacao {
@@ -150,28 +154,46 @@ h1 a:hover {
 .titulo {
   color: var(--cor_4);
   font-weight: bolder;
-  font-size: 30px ;
+  font-size: 32px ;
   margin-right: 2px solid;
   padding-bottom: 15px;
   font-family: monospace;
 }
 
-
-#msg {
+.msg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: center;
-  padding-top: 15px;
-  font-size: 20px;
+  padding-top: 20px;
+  font-size: 22px;
   gap: 25px;
 }
 
-#texto {
+#foto {
+  width: 250px;
+  border-radius: 100%;
+}
+
+.texto {
   text-align: justify;
   margin: auto;
+  font-size: 20px;
 }
+
+.texto_sobre {
+  text-align: justify;
+  margin: auto;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  position: left;
+  gap: 15px;
+}
+
 hr {
   border: none;
   background-color: var(--cor_5);
@@ -182,18 +204,18 @@ hr {
   position:relative;
   top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -85px);
 }
 
 .botao {
   border: none;
-  padding: 10px 12px;
+  padding: 15px 18px;
   background-color: var(--cor_5);
   border-radius: 10px;
   font-size: 30px;
   color: var(--cor_2);
   transition: 0.2s;
-  top: -100px;
+  top: -50px;
 }
 
 .botao:hover {
@@ -203,7 +225,7 @@ hr {
 #projetos{
   max-width: 1120px;
   margin: auto;
-  padding: 0rem 10rem 2rem 10rem;
+  padding: 50px 150px;
   background-color: var(--cor_2);
   color: var(--cor_1);
 }
@@ -278,7 +300,7 @@ hr {
 #profissional{
   max-width: 1120px;
   margin: auto;
-  padding: 0rem 10rem 10rem 10rem;
+  padding: 50px 150px;
   background-color: var(--cor_3);
   color: var(--cor_1);
 }
@@ -287,7 +309,7 @@ hr {
   position:relative;
   top: 100%;
   right: 0%;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -85px);
 }
 
 #conteudo_profissonal {
@@ -298,22 +320,22 @@ hr {
   position: center;
 }
 
-#conteudo_profissional .titulo {
-  padding-top: 90px;
+#conteudo_profissional_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-#conteudo_profissonal #texto {
-  padding-bottom: 90px;
+.semi_titulo {
+  color: var(--cor_4);
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: monospace;
 }
 
-#titulo {
-  font-size: 25px;
-  padding-bottom: 10px;
-  font-weight: bold;
-}
-
-#msg img {
-  width: 350px;
+.data {
+  font-size: 20px;
 }
 
 footer {
